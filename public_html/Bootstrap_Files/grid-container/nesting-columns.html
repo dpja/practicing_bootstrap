@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bootstrap-folder/css/bootstrap.min.css">
+        <style>
+            .own-style1,.own-style2{
+                height:50vh;
+                // border:2px solid yellow;
+                color:white;
+                font-size:50px;
+            }
+            .own-style1{
+                //  background-color:red;
+
+
+            }
+            .own-style2{
+                // background-color:purple;
+
+            }
+            .level1{
+                background:  lemonchiffon;
+            }
+
+            .level2{
+                background:lightskyblue;
+            }
+        </style>
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="../../js/jquery-1.12.1.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align:center;background-color: peachpuff">  nesting columns</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-lg-9 level1">
+                    Level 1: .col-sm-9
+                    <div class="row ">
+                        <div class="col-xs-8 col-sm-6 level2">
+                            Level 2: .col-xs-8 .col-sm-6
+                        </div>
+                        <div class="col-xs-4 col-sm-6  level2">
+                            Level 2: .col-xs-4 .col-sm-6
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-3 level1">
+                    Level 1: .col-sm-3 
+                </div>   
+
+
+
+
+            </div>
+        </div>
+    </body>
+</html>
